@@ -12,7 +12,7 @@ namespace PedidoAPI.Application.Interfaces
         List<PedidoRetornoDTO> ListarTodos();
         PedidoRetornoDTO ListarPorId(int id);
         PedidoRetornoDTO CriarPedido(PedidoDTO pedidoDTO);
-        Pedido AtualizarStatus(int id, StatusDTO statusDTO);
+        PedidoRetornoDTO AtualizarStatus(int id, StatusDTO statusDTO);
         void CancelarPedido(int id);
     }
 }

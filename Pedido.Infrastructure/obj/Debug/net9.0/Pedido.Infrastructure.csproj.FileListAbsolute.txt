@@ -32,3 +32,4 @@ C:\Users\SAMSUNG ODSSEY\Downloads\C#\PedidoAPI\Pedido.Infrastructure\obj\Debug\n
 C:\Users\SAMSUNG ODSSEY\Downloads\C#\PedidoAPI\Pedido.Infrastructure\obj\Debug\net9.0\ref\Pedido.Infrastructure.dll
 C:\Users\SAMSUNG ODSSEY\Downloads\C#\PedidoAPI\Pedido.Infrastructure\bin\Debug\net9.0\Pedido.Infrastructure.runtimeconfig.json
 C:\Users\SAMSUNG ODSSEY\Downloads\C#\PedidoAPI\Pedido.Infrastructure\obj\Debug\net9.0\Pedido.Infrastructure.genruntimeconfig.cache
+C:\Users\SAMSUNG ODSSEY\Downloads\C#\PedidoAPI\Pedido.Infrastructure\obj\Debug\net9.0\Pedido.Infrastructure.sourcelink.json

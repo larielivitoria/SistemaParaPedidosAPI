@@ -90,3 +90,4 @@ C:\Users\SAMSUNG ODSSEY\Downloads\C#\PedidoAPI\Pedido.API\bin\Debug\net9.0\Pedid
 C:\Users\SAMSUNG ODSSEY\Downloads\C#\PedidoAPI\Pedido.API\bin\Debug\net9.0\Pedido.Application.pdb
 C:\Users\SAMSUNG ODSSEY\Downloads\C#\PedidoAPI\Pedido.API\bin\Debug\net9.0\Pedido.Infrastructure.pdb
 C:\Users\SAMSUNG ODSSEY\Downloads\C#\PedidoAPI\Pedido.API\bin\Debug\net9.0\Pedido.Domain.pdb
+C:\Users\SAMSUNG ODSSEY\Downloads\C#\PedidoAPI\Pedido.API\obj\Debug\net9.0\Pedido.API.sourcelink.json

@@ -27,6 +27,11 @@ namespace PedidoAPI.Application.Services
 
         public void DeletarProduto(int id)
         {
+            var seExiste = _repository.ListarPorId(id);
+            if (seExiste == null)
+            {
+                throw new Exception($"Produto de Id {id} não encontrado.");
+            }
             _repository.DeletarProduto(id);
             _repository.Salvar();
         }
@@ -37,7 +42,7 @@ namespace PedidoAPI.Application.Services
 
             if (existe == null)
             {
-                throw new Exception("Produto não existe");
+                throw new Exception($"Produto de Id {id} não encontrado.");
             }
 
             existe.Descricao = produtoDTO.Descricao;
@@ -54,7 +59,7 @@ namespace PedidoAPI.Application.Services
             var existe = _repository.ListarPorId(id);
             if (existe == null)
             {
-                throw new Exception("Produto não existe.");
+                throw new Exception($"Produto de Id {id} não encontrado.");
             }
 
             return existe;

@@ -22,7 +22,7 @@ namespace PedidoAPI.Application.Services
             var existe = _repository.ListarPorId(id);
             if (existe == null)
             {
-                throw new Exception("Cliente não existe");
+                throw new Exception($"Cliente de Id {id} não encontrado.");
             }
             _repository.ApagarCliente(id);
             _repository.Salvar();
@@ -33,7 +33,7 @@ namespace PedidoAPI.Application.Services
             var existe = _repository.ListarPorId(id);
             if (existe == null)
             {
-                throw new Exception("Cliente não existe.");
+                throw new Exception($"Cliente de Id {id} não encontrado.");
             }
             existe.Email = clienteDTO.Email;
             existe.Endereco = clienteDTO.Endereco;
@@ -49,7 +49,7 @@ namespace PedidoAPI.Application.Services
             var existe = _repository.ListarPorId(id);
             if (existe == null)
             {
-                throw new Exception("O Cliente não existe.");
+                throw new Exception($"Cliente de Id {id} não encontrado.");
             }
             return existe;
         }

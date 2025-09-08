@@ -20,3 +20,4 @@ C:\Users\SAMSUNG ODSSEY\Downloads\C#\PedidoAPI\Pedido.Domain\obj\Debug\net9.0\Pe
 C:\Users\SAMSUNG ODSSEY\Downloads\C#\PedidoAPI\Pedido.Domain\obj\Debug\net9.0\refint\Pedido.Domain.dll
 C:\Users\SAMSUNG ODSSEY\Downloads\C#\PedidoAPI\Pedido.Domain\obj\Debug\net9.0\Pedido.Domain.pdb
 C:\Users\SAMSUNG ODSSEY\Downloads\C#\PedidoAPI\Pedido.Domain\obj\Debug\net9.0\ref\Pedido.Domain.dll
+C:\Users\SAMSUNG ODSSEY\Downloads\C#\PedidoAPI\Pedido.Domain\obj\Debug\net9.0\Pedido.Domain.sourcelink.json

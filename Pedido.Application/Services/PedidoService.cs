@@ -14,27 +14,37 @@ namespace PedidoAPI.Application.Services
     {
         private readonly IPedidoRepository _pedidoRepository;
         private readonly IProdutoRepository _produtoRepository;
-        public PedidoService(IPedidoRepository pedidoRepository, IProdutoRepository produtoRepository)
+        private readonly IClienteRepository _clienteRepository;
+        public PedidoService(IPedidoRepository pedidoRepository, IProdutoRepository produtoRepository, IClienteRepository clienteRepository)
         {
             _pedidoRepository = pedidoRepository;
             _produtoRepository = produtoRepository;
+            _clienteRepository = clienteRepository;
         }
 
-        public Pedido AtualizarStatus(int id, StatusDTO statusDTO)
+        public PedidoRetornoDTO AtualizarStatus(int id, StatusDTO statusDTO)
         {
             var existe = _pedidoRepository.ListarPorId(id);
-            if (existe == null)
-            {
-                throw new Exception("Pedido não existe.");
-            }
-            ;
+      
             existe.Status = statusDTO.Status;
             _pedidoRepository.Salvar();
-            return existe;
+
+            return new PedidoRetornoDTO
+            {
+                PedidoId = existe.Id,
+                ClienteId = existe.ClienteId,
+                Status = existe.Status,
+            };
         }
 
         public void CancelarPedido(int id)
         {
+            var seExiste = _pedidoRepository.ListarPorId(id);
+            if (seExiste == null)
+            {
+                throw new Exception($"Pedido de Id {id} não encontrado.");
+            }
+
             _pedidoRepository.CancelarPedido(id);
             _pedidoRepository.Salvar();
         }
@@ -42,13 +52,22 @@ namespace PedidoAPI.Application.Services
         public PedidoRetornoDTO CriarPedido(PedidoDTO pedidoDTO)
         {
             var pedido = new Pedido(pedidoDTO.ClienteId, pedidoDTO.Status);
+            var clienteExiste = _clienteRepository.ListarPorId(pedidoDTO.ClienteId);
+            if (clienteExiste == null)
+            {
+                throw new Exception($"Cliente de Id {pedidoDTO.ClienteId} não encontrado.");
+            }
             
             pedido.ItensDoPedido = pedidoDTO.ItensDoPedido.Select(itemDto =>
             {
+                if (itemDto.Quantidade <= 0)
+                {
+                    throw new Exception("Quantidade deve ser maior que zero.");
+                }
                 var produto = _produtoRepository.ListarPorId(itemDto.ProdutoId);
                 if (produto == null)
                 {
-                    throw new Exception($"Produto com Id {itemDto.ProdutoId} não encontrado");
+                    throw new Exception($"Produto de Id {itemDto.ProdutoId} não encontrado");
                 }
                 return new ProdutoInPedido(
                     pedido: pedido,
@@ -77,13 +96,14 @@ namespace PedidoAPI.Application.Services
         public PedidoRetornoDTO ListarPorId(int id)
         {
             var pedido = _pedidoRepository.ListarPorId(id);
+            if (pedido == null)
+            {
+                throw new Exception($"Pedido de Id {id} não encontrado.");
+            }
             var itens = pedido.ItensDoPedido.Select(itemDto =>
             {
                 var produto = _produtoRepository.ListarPorId(itemDto.ProdutoId);
-                if (produto == null)
-                {
-                    throw new Exception("Produto não existe.");
-                }
+                
             return new ItemDoPedidoRetornoDTO(
                 produtoId: produto.Id,
                 quantidadeProduto: itemDto.QuantidadeDeProduto,
