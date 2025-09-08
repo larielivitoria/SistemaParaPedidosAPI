@@ -1,0 +1,15 @@
+C:\Users\SAMSUNG ODSSEY\Downloads\C#\PedidoAPI\Pedido.Application\bin\Debug\net9.0\Pedido.Application.deps.json
+C:\Users\SAMSUNG ODSSEY\Downloads\C#\PedidoAPI\Pedido.Application\bin\Debug\net9.0\Pedido.Application.dll
+C:\Users\SAMSUNG ODSSEY\Downloads\C#\PedidoAPI\Pedido.Application\bin\Debug\net9.0\Pedido.Application.pdb
+C:\Users\SAMSUNG ODSSEY\Downloads\C#\PedidoAPI\Pedido.Application\bin\Debug\net9.0\Pedido.Domain.dll
+C:\Users\SAMSUNG ODSSEY\Downloads\C#\PedidoAPI\Pedido.Application\bin\Debug\net9.0\Pedido.Domain.pdb
+C:\Users\SAMSUNG ODSSEY\Downloads\C#\PedidoAPI\Pedido.Application\obj\Debug\net9.0\Pedido.Application.csproj.AssemblyReference.cache
+C:\Users\SAMSUNG ODSSEY\Downloads\C#\PedidoAPI\Pedido.Application\obj\Debug\net9.0\Pedido.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SAMSUNG ODSSEY\Downloads\C#\PedidoAPI\Pedido.Application\obj\Debug\net9.0\Pedido.Application.AssemblyInfoInputs.cache
+C:\Users\SAMSUNG ODSSEY\Downloads\C#\PedidoAPI\Pedido.Application\obj\Debug\net9.0\Pedido.Application.AssemblyInfo.cs
+C:\Users\SAMSUNG ODSSEY\Downloads\C#\PedidoAPI\Pedido.Application\obj\Debug\net9.0\Pedido.Application.csproj.CoreCompileInputs.cache
+C:\Users\SAMSUNG ODSSEY\Downloads\C#\PedidoAPI\Pedido.Application\obj\Debug\net9.0\Pedido.A.2316932B.Up2Date
+C:\Users\SAMSUNG ODSSEY\Downloads\C#\PedidoAPI\Pedido.Application\obj\Debug\net9.0\Pedido.Application.dll
+C:\Users\SAMSUNG ODSSEY\Downloads\C#\PedidoAPI\Pedido.Application\obj\Debug\net9.0\refint\Pedido.Application.dll
+C:\Users\SAMSUNG ODSSEY\Downloads\C#\PedidoAPI\Pedido.Application\obj\Debug\net9.0\Pedido.Application.pdb
+C:\Users\SAMSUNG ODSSEY\Downloads\C#\PedidoAPI\Pedido.Application\obj\Debug\net9.0\ref\Pedido.Application.dll

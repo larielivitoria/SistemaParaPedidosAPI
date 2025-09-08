@@ -1,0 +1,7 @@
+{
+    "editor.suggestOnTriggerCharacters": true,
+    "terminal.integrated.suggest.suggestOnTriggerCharacters": false,
+    "editor.quickSuggestionsDelay": 0,
+    "editor.inlineSuggest.enabled": true,
+    "editor.inlineSuggest.suppressSuggestions": true
+}
