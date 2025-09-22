@@ -1,6 +1,6 @@
 # SistemaParaPedidosAPI
 
-### Desenvolvi esse projeto para consolidar meus conhecimentos em DDD
+### Desenvolvi esse projeto para consolidar meus conhecimentos em arquitetura limpa.
 
 Explorei estrutura em camadas API - Domain - Application - Infrastructure
 
